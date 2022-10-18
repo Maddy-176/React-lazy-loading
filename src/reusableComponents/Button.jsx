@@ -4,7 +4,7 @@ import "../styles/button.css";
 
 const Button = ({ btnTxt, className, onClick }) => {
   return (
-    <button className={className} onClick={onClick}>
+    <button  className={className} onClick={onClick}>
       {btnTxt}
     </button>
   );

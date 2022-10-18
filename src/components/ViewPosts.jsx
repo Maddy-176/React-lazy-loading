@@ -21,7 +21,7 @@ const ViewPosts=()=>{
     </div>
     <div>
         <Suspense fallback={<LoadingScreen/>}>
-        <table className="table table-bordered">
+        <table className="table table-bordered" >
       <thead>
         <tr>
           <th>Title</th>

@@ -14,7 +14,7 @@ function useFetch(param) {
         });
       })
       .catch((err) => {
-        console.log("is error", err);
+        console.log("is error ", err);
       });
   }, [param]);
 

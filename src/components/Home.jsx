@@ -15,7 +15,7 @@ const Home = () => {
           </div>
           <div>
             <Link to="/posts">
-              <Button btnTxt="View Posts" className="route-btn" />
+              <Button btnTxt="View Posts"  className="route-btn" />
             </Link>
           </div>
         </nav>

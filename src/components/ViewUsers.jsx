@@ -14,7 +14,7 @@ const ViewUsers=()=> {
 
   return (
 <>
-    <h2>User Details</h2>
+    <h2>User Details </h2>
 
     <div className="navigate-btn-container">
     <Button className={"navigate-back-btn"} btnTxt={"Back"}  onClick={()=>navigate("/")}/>
