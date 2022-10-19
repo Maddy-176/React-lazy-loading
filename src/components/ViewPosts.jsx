@@ -1,9 +1,8 @@
-import React,{Suspense} from 'react';
+import React from 'react';
 import Button from '../reusableComponents/Button';
 import useFetch from '../custom_hooks/useFetch';
 import { useNavigate } from 'react-router-dom';
 import "../styles/display.css"
-import LoadingScreen from './LoadingScreen';
 
 const ViewPosts=()=>{
   const data=useFetch("posts")
@@ -20,7 +19,6 @@ const ViewPosts=()=>{
     <Button className={"navigate-back-btn"} btnTxt={"Back"}  onClick={()=>navigate("/")}/>
     </div>
     <div>
-        <Suspense fallback={<LoadingScreen/>}>
         <table className="table table-bordered" >
       <thead>
         <tr>
@@ -40,7 +38,6 @@ const ViewPosts=()=>{
       </tbody>
 
     </table>
-    </Suspense>
     </div>
     </>
 

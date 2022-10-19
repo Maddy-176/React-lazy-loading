@@ -7,6 +7,18 @@ import LoadingScreen from './LoadingScreen';
 import { Suspense } from 'react';
 
 const ViewUsers=()=> {
+
+
+  return (
+<>
+    <Suspense fallback={<LoadingScreen/>}>
+      <ViewUsersScreen/>
+    </Suspense>
+
+    </>  )
+}
+
+const ViewUsersScreen=()=> {
   const data=useFetch("users")
 
   const navigate= useNavigate();
@@ -48,5 +60,6 @@ const ViewUsers=()=> {
     </div>
     </>  )
 }
+
 
 export default ViewUsers

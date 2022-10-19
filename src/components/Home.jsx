@@ -1,12 +1,12 @@
-import React,{Suspense} from "react";
+import React from "react";
 import { Outlet, Link } from "react-router-dom";
 import Button from "../reusableComponents/Button";
-import LoadingScreen from "./LoadingScreen";
 const Home = () => {
   return (
     <>
       <>
-      <Suspense fallback={<LoadingScreen/>}>
+      <h2>Lazy Loading Assignment in react</h2>
+
         <nav>
           <div>
             <Link to="/users">
@@ -21,7 +21,6 @@ const Home = () => {
         </nav>
 
         <Outlet />
-        </Suspense>
 
       </>
     </>
